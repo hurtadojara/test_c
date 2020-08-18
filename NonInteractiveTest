@@ -1,0 +1,117 @@
+#!/bin/bash
+echo -e "\n\n\n"
+
+echo "			THIS TEST IS IN NON INTERACTIVE MODE"
+echo -e "\n\n\n"
+
+
+
+echo -e "\t\t1. CHECK A NORMAL COMMAND"
+echo "Your terminal"
+echo "ls" | ./hsh
+sleep 2
+echo -e "\n"
+echo "*******************************************************************"
+echo "Original Shell"
+echo "ls" | sh
+sleep 2
+echo -e "\n\n\n"
+
+
+echo "####################################################################"
+echo -e "\t\t2. CHECK A NORMAL COMMAND  WITH ARGS"
+echo "Your terminal"
+echo "ls -l" | ./hsh
+sleep 2
+echo -e "\n"
+echo "*******************************************************************"
+echo "Original Shell"
+echo "ls -l" | sh
+sleep 2
+echo -e "\n\n\n"
+
+
+echo "####################################################################"
+echo -e "\t\t3. CHECK A COMMAND WITH THE PATH"
+echo "Your terminal"
+echo "/bin/ls" | ./hsh
+sleep 2
+echo -e "\n"
+echo "*******************************************************************"
+echo "Original Shell"
+echo "/bin/ls" | sh
+sleep 2
+echo -e "\n\n\n"
+
+echo "####################################################################"
+echo -e "\t\t4. CHECK A COMMAND WITH THE PATH AND ARGS"
+echo "Your terminal"
+echo "/bin/ls -l" | ./hsh
+sleep 2
+echo -e "\n"
+echo "*******************************************************************"
+echo "Original Shell"
+echo "/bin/ls -l" | sh
+sleep 2
+echo -e "\n\n"
+
+echo "####################################################################"
+echo -e "\t\t5. CHECK A BAD COMMAND"
+echo "Your terminal"
+echo "qwerty" | ./hsh
+sleep 2
+echo -e "\n"
+echo "*******************************************************************"
+echo "Original Shell"
+echo "qwerty" | sh
+sleep 2
+echo -e "\n\n\n"
+
+echo "####################################################################"
+echo -e "\t\t6. CHECK A NORMAL COMMAND WITH MANY MANY SPACES AT THE BEGINNING"
+echo "Your terminal"
+echo "                  ls" | ./hsh
+sleep 2
+echo -e "\n"
+echo "*******************************************************************"
+echo "Original Shell"
+echo "                  ls" | sh
+sleep 2
+echo -e "\n\n\n"
+
+echo "####################################################################"
+echo -e "\t\t7. CHECK A NORMAL COMMAND MANY WITH MANY SPACES AT THE END"
+echo "Your terminal"
+echo "ls                  " | ./hsh
+sleep 2
+echo -e "\n"
+echo "*******************************************************************"
+echo "Original Shell"
+echo "ls                   " | sh
+sleep 2
+echo -e "\n\n\n"
+
+echo "####################################################################"
+echo -e "\t\t8. CHECK A NORMAL COMMAND MANY WITH MANY SPACES AND ARGS"
+echo "Your terminal"
+echo "ls          -l        " | ./hsh
+sleep 2
+echo -e "\n"
+echo "*******************************************************************"
+echo "Original Shell"
+echo "ls          -l        " | sh
+sleep 2
+echo -e "\n\n\n"
+
+echo "####################################################################"
+echo -e "\t\t9. CHECK THE ENV"
+echo "Your terminal"
+echo "env" | ./hsh
+sleep 2
+echo -e "\n"
+echo "*******************************************************************"
+echo "Original Shell"
+echo "env" | sh
+sleep 2
+echo -e "\n\n\n"
+
